@@ -14,16 +14,15 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '18.x'
-  displayName: Install Node.js
 
 - script: |
+    cd frontend
     npm install
     npm run build
   displayName: Build React App
 
-# Deploy to Azure App Service
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'azure-connection'
-    appName: 'ecommerce-app'
-    package: '$(System.DefaultWorkingDirectory)'
+    appName: 'YOUR-APP-SERVICE-NAME'
+    package: '$(System.DefaultWorkingDirectory)/frontend/build'
