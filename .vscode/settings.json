@@ -1,0 +1,5 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/493a2864-6111-4ff6-9db3-0d3f400bd5f4/resourceGroups/rajstore/providers/Microsoft.Web/sites/ecommercewebapps",
+    "appService.deploySubpath": "frontend\\dist",
+    "java.compile.nullAnalysis.mode": "automatic"
+}
