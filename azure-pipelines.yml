@@ -24,6 +24,6 @@ steps:
 # Deploy to Azure App Service
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'YOUR-SERVICE-CONNECTION'
+    azureSubscription: 'azure-connection'
     appName: 'YOUR-APP-SERVICE-NAME'
     package: '$(System.DefaultWorkingDirectory)'
