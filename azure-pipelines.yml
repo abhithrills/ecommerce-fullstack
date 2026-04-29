@@ -25,5 +25,5 @@ steps:
 - task: AzureWebApp@1
   inputs:
     azureSubscription: 'azure-connection'
-    appName: 'YOUR-APP-SERVICE-NAME'
+    appName: 'ecommerce-app'
     package: '$(System.DefaultWorkingDirectory)'
